@@ -36,5 +36,6 @@ function onCheckboxClick(evt) {
 const storageTheme = localStorage.getItem('theme');
 if (storageTheme === Theme.DARK) {
   switchCheckboxTheme.checked = true;
+  bodyEl.classList.remove(Theme.LIGHT);
   bodyEl.classList.add(Theme.DARK);
 }
